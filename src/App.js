@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Options from './components/Options';
 import WeatherApp from './components/WeatherApp';
-import Err from './components/Err';
+import Err from './components/Err'
 
 const API = {
-    base: 'https://api.openweathermap.org/data/2.5/',
-    key: '9066cdd50c6785847329c4d979990fc6'
+    base: process.env.REACT_APP_API_BASE,
+    key: process.env.REACT_APP_API_KEY
 }
 
 const App = () => {
